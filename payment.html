@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .OBSS-container {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            padding: 40px;
+        }
+        
+        .OBSS-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .OBSS-header h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .OBSS-header p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-submit {
+            background: #667eea;
+            color: white;
+        }
+               
+
+    </style>
+</head>
+    <body> 
+        <form>
+            <div>
+                <label for="num">Input CardNumber:</label>
+                <input type="text" id="num" name="num" required>
+            </div>
+            <br>
+            <div>   
+                <label for="name">Input name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <br>
+            <div>
+                <label for="password">Input password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div>
+                <label>Tip</label>
+                <select name="dropdown">
+                    <option value="1">15%</option>
+                    <option value="2">20%</option>
+                    <option value="3">50%</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <input type="submit" value="Pay Securely">
+            </div>
+        </form>
+    </body>
+</html>
